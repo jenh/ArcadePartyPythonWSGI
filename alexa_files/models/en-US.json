@@ -1,0 +1,105 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "arcade party",
+      "intents": [
+        {
+          "name": "AMAZON.PauseIntent"
+        },
+        {
+          "name": "AMAZON.ResumeIntent"
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "quit",
+            "exit",
+            "bye",
+            "goodbye"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.NextIntent"
+        },
+        {
+          "name": "AMAZON.PreviousIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent"
+        },
+        {
+          "name": "PlayIntent",
+          "slots": [
+            {
+              "name": "year",
+              "type": "ARCADE_YEAR"
+            }
+          ],
+          "samples": [
+            "play {year}",
+            "play arcade ambiance from {year}",
+            "play arcade ambiance of {year}",
+            "play arcade sounds from {year}",
+            "play arcade sounds of {year}",
+            "play arcade party {year}",
+            "play {year} arcade party",
+            "{year}",
+            "arcade {year}",
+            "{year} arcade"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "81"
+              }
+            },
+            {
+              "name": {
+                "value": "1981"
+              }
+            },
+            {
+              "name": {
+                "value": "83"
+              }
+            },
+            {
+              "name": {
+                "value": "1983"
+              }
+            },
+            {
+              "name": {
+                "value": "86"
+              }
+            },
+            {
+              "name": {
+                "value": "1986"
+              }
+            },
+            {
+              "name": {
+                "value": "92"
+              }
+            },
+            {
+              "name": {
+                "value": "1992"
+              }
+            }
+          ],
+          "name": "ARCADE_YEAR"
+        }
+      ]
+    }
+  },
+  "version": "1"
+}

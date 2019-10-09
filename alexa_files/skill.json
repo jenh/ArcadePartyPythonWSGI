@@ -1,0 +1,57 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "https://yourservername.com/arcadeparty/",
+          "sslCertificateType": "Trusted"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Arcade Party",
+          "smallIconUri": "https://path-to-your-small-icon",
+          "largeIconUri": "https://path-to-your-large-icon",
+          "summary": "Make your home or office sound like an arcade party!",
+          "description": "Make your home or office sound like a vintage arcade from 1981, 1983, 1986, or 1992 using Andy Hofle's (http://arcade.hofle.com) amazing audio arcade ambience recreations!\n\nTo invoke Arcade Party, say:\n\nAlexa, open Arcade Party\n\nTo start playing arcade sounds, say:\n\nAlexa, ask Arcade Party to play 1981.\n\nor:\n\nAlexa, ask Arcade Party to play arcade sounds from 1992.\n\nYou can use the four- or two-digit year for 1981, 1983, 1986, or 1992. Use Next and Previous to move through different arcade eras. Say Stop or Pause to pause, and Resume or Start to pick up where you left off.\n\nMany thanks to Archive.org (https://archive.org/), a preservational non-profit that not only hosts this fabulous content, but also provides and maintains a truly historical treasure trove!\n\n__\n",
+          "examplePhrases": [
+            "Alexa, ask Arcade Party to play arcade sounds from 1992.",
+            "Alexa, ask Arcade Party to play 1983.",
+            "Alexa, ask Arcade Party 81."
+          ],
+          "keywords": [
+            "arcade",
+            "white",
+            "noise",
+            "retro",
+            "gaming",
+            "retro",
+            "sound",
+            "effects",
+            "arcade",
+            "party"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "This skill streams arcade sounds from different eras. You can choose an arcade replication from 1981, 1983, 1986, or 1992. You should be able to ask for the year using both two and four digits. If Alexa doesn't understand your year, or if it's not valid, she'll tell you so and spin up 1986. Supports Next, Previous, Pause/Stop, and Resume/Start.",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    }
+  }
+}
