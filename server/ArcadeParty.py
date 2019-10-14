@@ -12,8 +12,8 @@ from datetime import datetime
 from flask import Flask, json, abort 
 from flask_ask import Ask, question, statement, audio, current_stream, logger, session, request, convert_errors, context
 
-app = Flask(__name__)
-ask = Ask(app, "/",stream_cache=RedisCache(key_prefix="arcamb_",default_timeout=172800))
+application = Flask(__name__)
+ask = Ask(application, "/",stream_cache=RedisCache(key_prefix="arcamb_",default_timeout=172800))
 logging.getLogger('flask_ask').setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s - %(module)s - %(levelname)s - Thread_name: %(threadName)s - %(message)s'
 logging.basicConfig(
@@ -133,6 +133,6 @@ if __name__ == '__main__':
     if 'ASK_VERIFY_REQUESTS' in os.environ:
         verify = str(os.environ.get('ASK_VERIFY_REQUESTS', '')).lower()
         if verify == 'false':
-            app.config['ASK_VERIFY_REQUESTS'] = False
-    app.run(debug=True)
+            application.config['ASK_VERIFY_REQUESTS'] = False
+    application.run(debug=True)
 
